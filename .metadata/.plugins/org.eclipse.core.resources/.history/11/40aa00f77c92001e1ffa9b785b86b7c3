@@ -1,0 +1,18 @@
+
+
+server.port=4444
+spring.application.name=MOVIE-API-GATEWAY
+
+
+#Setting the contextpath for Zuuly Proxy Server
+zuul.prefix=/api
+
+
+#MS-1 Configuration
+zuul.routes.price.path=/price/**
+zuul.routes.price.service-id=BOOK-MY-SHOW-SERVICE
+
+
+#MS-2 Configuration
+zuul.routes.calc.path=/calc/**
+zuul.routes.calc.service-id=MOVIE-CALCULATION-SERVICE

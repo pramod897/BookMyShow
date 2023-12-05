@@ -1,0 +1,18 @@
+package in.pramod.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.Data;
+
+@Data
+@Entity
+public class MoviePrice {
+
+	@Id
+	private Integer movieId;
+	
+	private String movieName;
+	
+	private Double moviePrice;
+}

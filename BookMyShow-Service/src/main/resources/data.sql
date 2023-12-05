@@ -1,0 +1,4 @@
+insert into MOVIE_PRICE(MOVIE_ID,MOVIE_NAME,MOVIE_PRICE)values(1,'salar',400);
+insert into MOVIE_PRICE(MOVIE_ID,MOVIE_NAME,MOVIE_PRICE)values(2,'animal',300);
+insert into MOVIE_PRICE(MOVIE_ID,MOVIE_NAME,MOVIE_PRICE)values(3,'dunki',450);
+insert into MOVIE_PRICE(MOVIE_ID,MOVIE_NAME,MOVIE_PRICE)values(4,'kgf',300);

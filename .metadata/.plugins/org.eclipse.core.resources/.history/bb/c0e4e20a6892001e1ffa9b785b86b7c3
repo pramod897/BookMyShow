@@ -1,0 +1,5 @@
+package in.pramod.entity;
+
+public class MoviePrice {
+
+}

@@ -1,0 +1,5 @@
+package in.pramod.exception;
+
+public class MovieNotFoundException {
+
+}

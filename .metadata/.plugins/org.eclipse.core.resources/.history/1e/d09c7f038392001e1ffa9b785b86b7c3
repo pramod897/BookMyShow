@@ -1,0 +1,36 @@
+package in.pramod.controller;
+
+import org.springframework.stereotype.Controller;
+
+import in.pramod.service.MovieService;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+
+
+@Controller
+public class MovieUIController {
+
+	@Autowired
+	private MovieService service;
+	
+	@GetMapping("/")
+	public String loadPage() {
+		return "Index";
+	}
+	
+	public String getTotalCost(HttpServletRequest request,Model model) {
+		
+		String movieName =request.getParameter("movieName");
+		String noOfTickets=request.getParameter("noOfTickets");
+		
+		String response=service.getTotalStockPrice(movieName, Integer.parseInt(noOfTickets));
+		model.addAttribute("msg",response);
+		return "index";
+	}
+}

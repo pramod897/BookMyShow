@@ -1,0 +1,5 @@
+package in.pramod.gobalHandler;
+
+public class MovieRestApiError {
+
+}
